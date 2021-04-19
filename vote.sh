@@ -13,3 +13,5 @@ echo "Captcha: $captcha"
 captcha=`./recaptcha_solve.sh`
 echo "Captcha: $captcha"
 ./single_vote.sh $token $captcha
+
+echo "Votes: `./votes_get.sh`"
